@@ -1,15 +1,19 @@
+:root {
+    --siteBackgroundcolor:#ff0000;
+    --lineBackgroundcolor:#D9D9D9;
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: #ff0000;
+    background-color: var(--siteBackgroundcolor);
 
 }
 
 #bannerINFINITYGAUNTLET{
-    width: 20vw;
+    width: 21vw;
     height: auto;
     position: absolute;
     left:-55px;
@@ -21,52 +25,85 @@ body{
 #line1{
     position: absolute;
     top: -10px;
-    left: 340px;
+    left: 370px;
     width: 15px;
     height: 600px;
-    background-color: #D9D9D9;
+    background-color: var(--lineBackgroundcolor);
     transform: rotate(8deg);
     z-index: 99;
 }
 
 #bannerSECRETWAR{
-    width: 20vw;
+    width: 23vw;
     height: auto;
     position: absolute;
-    left: 330px;
+    left: 360px;
     top: -10px;
     z-index: -2;
     
 }
+#line2{
+    position: absolute;
+    top: -10px;
+    left: 760px;
+    width: 15px;
+    height: 600px;
+    background-color: var(--lineBackgroundcolor);
+    transform: rotate(7deg);
+    z-index: 99;
+}
+
 
 #bannerCIVILWAR{
     width: 20vw;
     height: auto;
     position: absolute;
-    left: 691.01px;
-    top: -81.73px;
+    left: 781px;
+    top: -51.73px;
     transform: rotate(7deg);
     z-index: -1;
     
 }
+
+#line3{
+    position: absolute;
+    top: -10px;
+    left: 1175px;
+    width: 15px;
+    height: 600px;
+    background-color: var(--lineBackgroundcolor);
+    transform: rotate(7deg);
+    z-index: 99;
+}
 #bannerHOUSEOFM{
-    width: 20vw;
+    width: 21vw;
     height: auto;
     position: absolute;
-    left:1510.42px;
-    top: -30.05px;
+    left:1149.42px;
+    top: -79.05px;
     transform: rotate(-3deg);
     z-index: -2;
 }
 
+#line4{
+    position: absolute;
+    top: -10px;
+    left: 1577px;
+    width: 15px;
+    height: 600px;
+    background-color: var(--lineBackgroundcolor);
+    transform: rotate(-3deg);
+    z-index: 99;
+}
+
 #bannerOLDMANLOGAN{
-    width: 20vw;
+    width: 22vw;
     height: auto;
     position: absolute;
-    left:2074.42px;
+    left:1554.42px;
     top: -166px;
     transform: rotate(10deg);
-    z-index: -1;
+    z-index: -3;
 
 }
 #bannerRISS{
