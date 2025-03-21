@@ -1,31 +1,58 @@
 :root {
     --siteBackgroundcolor:#ff0000;
     --lineBackgroundcolor:#D9D9D9;
+   
 }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+
 }
 body{
     background-color: var(--siteBackgroundcolor);
 
 }
+@font-face {
+    font-family: normaleFONT;
+    src: url(../fonts/normaleFONT.ttf);
+}
+@font-face {
+    font-family: uberschriftenFONT;
+    src: url(../fonts/uberschriftenFONT.ttf);
+}
+
+h2{
+    font-family:uberschriftenFONT;
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#fameUBERSCHRIFT{
+    position: absolute;
+    top: 530px;
+    left: 20px;
+    z-index: 1000;
+}
 
 #bannerINFINITYGAUNTLET{
-    width: 21vw;
+    width: 22vw;
     height: auto;
     position: absolute;
     left:-55px;
     top: -83.43px;
     transform: rotate(8deg);
     z-index: -1;
+    font-family: var(--uberschriftenFONT);
 
 }
 #line1{
     position: absolute;
     top: -10px;
-    left: 370px;
+    left: 390px;
     width: 15px;
     height: 600px;
     background-color: var(--lineBackgroundcolor);
@@ -37,7 +64,7 @@ body{
     width: 23vw;
     height: auto;
     position: absolute;
-    left: 360px;
+    left: 380px;
     top: -10px;
     z-index: -2;
     
@@ -45,7 +72,7 @@ body{
 #line2{
     position: absolute;
     top: -10px;
-    left: 760px;
+    left: 770px;
     width: 15px;
     height: 600px;
     background-color: var(--lineBackgroundcolor);
@@ -55,11 +82,11 @@ body{
 
 
 #bannerCIVILWAR{
-    width: 20vw;
+    width: 21vw;
     height: auto;
     position: absolute;
     left: 781px;
-    top: -51.73px;
+    top: -54.73px;
     transform: rotate(7deg);
     z-index: -1;
     
@@ -68,7 +95,7 @@ body{
 #line3{
     position: absolute;
     top: -10px;
-    left: 1175px;
+    left: 1195px;
     width: 15px;
     height: 600px;
     background-color: var(--lineBackgroundcolor);
@@ -76,11 +103,11 @@ body{
     z-index: 99;
 }
 #bannerHOUSEOFM{
-    width: 21vw;
+    width: 22vw;
     height: auto;
     position: absolute;
-    left:1149.42px;
-    top: -79.05px;
+    left:1165.42px;
+    top: -109.05px;
     transform: rotate(-3deg);
     z-index: -2;
 }
@@ -88,7 +115,7 @@ body{
 #line4{
     position: absolute;
     top: -10px;
-    left: 1577px;
+    left: 1610px;
     width: 15px;
     height: 600px;
     background-color: var(--lineBackgroundcolor);
@@ -97,10 +124,10 @@ body{
 }
 
 #bannerOLDMANLOGAN{
-    width: 22vw;
+    width: 25.2vw;
     height: auto;
     position: absolute;
-    left:1554.42px;
+    left:1574.42px;
     top: -166px;
     transform: rotate(10deg);
     z-index: -3;
