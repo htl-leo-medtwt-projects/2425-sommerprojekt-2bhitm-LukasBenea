@@ -12,6 +12,7 @@
 }
 body{
     background-color: var(--siteBackgroundcolor);
+    
 
 }
 @font-face {
@@ -32,10 +33,7 @@ a{
     color: black;
 }
 #fameUBERSCHRIFT{
-    position: absolute;
-    top: 530px;
-    left: 20px;
-    z-index: 1000;
+
 }
 
 #bannerINFINITYGAUNTLET{
@@ -112,6 +110,7 @@ a{
     z-index: -2;
 }
 
+
 #line4{
     position: absolute;
     top: -10px;
@@ -139,4 +138,13 @@ a{
     top: 360px;
     left: -300px;
     transform: scale(0.95);
+}
+
+#footer{
+    position: absolute;
+    height: 10vh;
+    background-color: black;
+    bottom: 0px;
+    z-index: 1111010;
+    width: 100%;
 }

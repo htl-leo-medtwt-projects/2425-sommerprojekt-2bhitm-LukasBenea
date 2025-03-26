@@ -1,0 +1,141 @@
+:root {
+    --siteBackgroundcolor: #FFF9D0;
+    
+    
+   
+}
+*{
+    margin: 0;
+    left: 0;
+    box-sizing: border-box;
+  
+
+}
+
+@font-face {
+    font-family: normaleFONT;
+    src: url(../fonts/normaleFONT.ttf);
+}
+@font-face {
+    font-family: uberschriftenFONT;
+    src: url(../fonts/uberschriftenFONT.ttf);
+}
+.wrapper{
+    -ms-overflow-style: none;  
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    -ms-overflow-style: none;  
+    margin: 0;
+    height: 100%;
+   
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+#ironmanBanner{
+    transform: scaleX(-1);
+    height: 100vh;
+}
+#captainBanner{
+    position: relative;
+    left: 457px;
+    height: 100vh;
+}
+#nav{
+    position: absolute;
+    top: 0px;
+    left: 793.5px;
+    width: 463px;
+    height: 100vh;
+    z-index: 100;
+    background: linear-gradient(90deg, #13628D 0%, #9C1B20 100%);
+}
+h1{
+    position: relative;
+    font-family: uberschriftenFont;
+    text-align: center;
+    top: 90px;
+    font-size: 60px;
+    color: white;
+    font-weight: lighter;
+}
+#homeLINK{
+    position: absolute;
+    left:958.5px;
+    top: 240px;
+    z-index: 1000;
+    font-family: uberschriftenFont;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+#fameLINK{
+    position: absolute;
+    left:893.5px;
+    top: 340px;
+    z-index: 1000;
+    font-family: uberschriftenFont;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+#quizLINK{
+    left:965.5px;
+    position: absolute;
+    z-index: 1000;
+    top: 440px;
+    font-family: uberschriftenFont;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+#accountLINK{
+    left:938.5px;
+    position: absolute;
+    z-index: 1000;
+    top: 850px;
+    font-family: uberschriftenFont;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+#accountBild{
+    position: absolute;
+    left: 975px;
+    top:920px;
+    width: 100px;
+    height: auto;
+    border: #D9D9D9 5px solid;
+    z-index: 101;
+}
+
+
+a{
+    text-decoration: none;
+  
+}
+#section1{
+   position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    
+  
+}
+#section2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--siteBackgroundcolor);
+    scroll-snap-align: start;
+}
