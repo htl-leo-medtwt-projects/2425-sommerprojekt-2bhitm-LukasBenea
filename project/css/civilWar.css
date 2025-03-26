@@ -1,5 +1,7 @@
 :root {
     --siteBackgroundcolor: #FFF9D0;
+    --captainFARBE: #106192;
+    --ironmanFARBE:#EA111D;
     
     
    
@@ -11,6 +13,9 @@
   
 
 }
+*::-webkit-scrollbar {
+    display: none;
+  }
 
 @font-face {
     font-family: normaleFONT;
@@ -28,9 +33,7 @@
     scroll-behavior: smooth;
 }
 
-.wrapper::-webkit-scrollbar {
-    display: none;
-  }
+
 body{
     -ms-overflow-style: none;  
     margin: 0;
@@ -135,7 +138,63 @@ a{
 #section2{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     background: var(--siteBackgroundcolor);
     scroll-snap-align: start;
+    overflow-y: scroll;
+}
+
+#sidesBILDContainer{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+}
+#sidesBild{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+#sidesText{
+   
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    top: 20vh;
+    display: flex;
+    text-align: center;
+ 
+}
+#ironBUTTON{
+    width: 300px;
+    height: 50px;
+    background-color: var(--ironmanFARBE);
+    display: flex;
+    justify-content: center;
+    font-family: uberschriftenFont;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+    z-index: 120;
+}
+#captainBUTTON{
+    width: 300px;
+    height: 50px;
+    background-color: var(--captainFARBE);
+    display: flex;
+    justify-content: center;
+    font-family: uberschriftenFont;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+    z-index: 120;
+    
 }

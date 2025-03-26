@@ -8,12 +8,23 @@
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: normaleFont;
 
 }
+*::-webkit-scrollbar {
+    display: none;
+  }
 body{
     background-color: var(--siteBackgroundcolor);
     
 
+}
+.wrapper{
+    -ms-overflow-style: none;  
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: normaleFONT;
@@ -22,6 +33,22 @@ body{
 @font-face {
     font-family: uberschriftenFONT;
     src: url(../fonts/uberschriftenFONT.ttf);
+}
+#nav{
+    margin-top: 537px;
+    margin-left: 60px;
+    gap: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    z-index: 1000;
+}
+h1{
+ margin-top: 8px;
+    font-size: 55px;
+    z-index: 100;
+    font-family: uberschriftenFont;
+
+    
 }
 
 h2{
@@ -33,8 +60,16 @@ a{
     color: black;
 }
 #fameUBERSCHRIFT{
+    margin-top: 10px;
+    z-index: 100;
+    font-size: 45px;
 
 }
+#quizUBERSCHRIFT{
+    z-index: 100;
+    margin-top: 20px;
+}
+
 
 #bannerINFINITYGAUNTLET{
     width: 22vw;
@@ -140,11 +175,205 @@ a{
     transform: scale(0.95);
 }
 
+#arrow1{
+   position: absolute;
+  
+    top: 700px;
+    left: 930px;
+    z-index: 1100;
+    animation: arrows infinite ease-in-out 1s 1s;
+
+
+}
+#arrow2{
+    position: absolute;
+    top: 770px;
+    left: 930px;
+    animation: arrows infinite ease-in-out 1s ;
+
+}
+
+@keyframes arrows {
+    0%{margin-top: 0px;}
+    50%{margin-top: 10px;}
+    10%{margin-top: 20px;}
+
+    
+}
+
+#section1{
+    position: relative;
+     width: 100%;
+     height: 100vh;
+     scroll-snap-align: start;
+     
+   
+ }
+ #section2{
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     background: var(--siteBackgroundcolor);
+     scroll-snap-align: start;
+     overflow-y: scroll;
+ }
+ #section3{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: var(--siteBackgroundcolor);
+    scroll-snap-align: start;
+    overflow-y: scroll;
+}
+
+
 #footer{
     position: absolute;
-    height: 10vh;
-    background-color: black;
+    height: 17vh;
+    background-image: linear-gradient(var(--siteBackgroundcolor),black,black,black);
     bottom: 0px;
     z-index: 1111010;
     width: 100%;
+}
+#socials{
+position: absolute;
+left: 20px;
+bottom: 15px;
+display: grid;
+grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+#socials p{
+    margin-top: 35px;
+    color: #D9D9D9;
+    font-family: normaleFont;
+    font-size: 20px;
+}
+#socials img{
+   width: 90px;
+}
+
+#socials img:hover{
+    transform: scale(1.1);
+}
+
+#accountBild{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+#accountBild img {
+ width: 80px;
+    border: #D9D9D9 5px solid;
+}
+
+#comment1{
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    transform: scaleX(-1);
+  
+}
+
+#ctext1{
+    width: 450px;
+    position: absolute;
+    left: 370px;
+    top: 110px;
+    font-size: 19px;
+}
+
+#comment2{
+    position: absolute;
+    top: 500px;
+    left: 350px;
+    transform: scaleX(-1);
+}
+
+#ctext2{
+    width: 450px;
+    position: absolute;
+    left: 370px;
+    top: 540px;
+    font-size: 19px;
+}
+#comment3{
+    position: absolute;
+    top: 20px;
+    right: 390px;
+    transform: scaleX(1);
+}
+
+
+#ctext3{
+    width: 380px;
+    position: absolute;
+    right: 430px;
+    top: 60px;
+    font-size: 19px;
+}
+#comment4{
+    position: absolute;
+    top: 440px;
+    right: 350px;
+    transform: scaleX(1);
+}
+
+#ctext4{
+    width: 450px;
+    position: absolute;
+    right: 360px;
+    top: 510px;
+    font-size: 19px;
+}
+#verticalLine{
+    width: 35px;
+    height: 900px;
+    background-color: var(--lineBackgroundcolor);
+    border: 4px solid black;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#deadpool1{
+    position: absolute;
+    width: 400px;
+    right: 0px;
+    top: 0px;
+}
+#blase{
+    position: absolute;
+    right: 330px;
+    top: 30px;
+    transform: scale(0.8);
+}
+#deadpool2{
+    position: absolute;
+    right: 200px;
+    top: 160px;
+    transform: scale(0.75);
+}
+#tipp{
+    position: absolute;
+    right: 430px;
+    top: 130px;
+    font-size: 20px;
+}
+
+#comics{
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    width: 750px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 50px;
+}
+
+#comics img{
+    width: 200px;
+    border: 7px solid #D9D9D9;
+}
+#comics img:hover{
+   transform: scale(1.05);
 }
