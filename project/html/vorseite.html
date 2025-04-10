@@ -1,18 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Startseite</title>
+    <script src="../js/storage.js" defer></script>
+    <script src="../js/vorseite.js" defer></script>
     <link rel="stylesheet" href="../css/vorseite.css">
 </head>
+
 <body>
     <div id="bereiche">
-        <div id="anmeldeBereich"></div>
-        <div id="regBereich">
-            <div id="regButton">REGISTRIEREN</div>
+        <div id="section1">
+            <div id="tippBox">
+                
+                <img src="../images/vorseite/deadpoolHello.png" id="helloImg" alt="">
+                <img id="deadBlase" src="../images/startseite/comicBlase.png" alt="">
+
+                <div id="deadTipp">
+                    Hallo! Hier! Schön dich hier zu<br>
+                    sehen aber das ist nur der Start, vertrau mir.<br>
+                    Mach dich gefasst auf eine hammermäßige <strong>Sch***e</strong>.<br>
+                    Ah <strong>F*ck</strong> das Wort steht ja nicht im Script, uhhhh nochmal,<br>
+                    egal hahaha. Also wo waren wir. Deine Zeit hier wird nur<br>
+                    gut, wenn du dich auch anmeldest, dir also einen Account machst<br>
+                    und da helf ich dir eh. Wenn du es dir nur schnell anschauen<br>
+                    willst passt es mir auch <strong>Lahm*rsch</strong>, aber dann gibt’s<br>
+                    nicht alle Funktionen wie bewerten und so weiter...
+                </div>
+            </div>
+
+            <div id="anmeldeBereich">
+                <h2>Anmeldung</h2>
+                <input type="email" id="loginEmail" placeholder="E-Mail"><br><br>
+                <input type="password" id="loginPassword" placeholder="Passwort"><br><br>
+                <div id="loginButton">Anmelden</div>
+                <div id="gastButton">Als Gast fortfahren</div>
+                <div id="loginMessage"></div>
+                <div id="regButton">REGISTRIEREN</div>
+            </div>
         </div>
 
+        <div id="section2">
+            <div id="regBereich">
+                <div id="deadpoolREAD">
+                    <img id="deadpoolAskImg" src="../images/vorseite/deadpoolAsk.png" alt="">
+                    <img id="blase" src="../images/startseite/comicBlase.png" alt="">
+                    <div id="tipp">
+                        <div id="frage">Erstellen wir mal dein Account.<br>Du musst mir nur ein paar Fragen beantworten, verstanden?</div>
+                        <div id="ja">Ja</div>
+                        <input type="text" id="antwortInput" style="display: none;" autofocus>
+                    </div>
+                </div>
+
+                <div id="bilderGrid" style="display: none;"></div>
+                <div id="confirmProfile" style="display: none;">Bestätigen</div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
