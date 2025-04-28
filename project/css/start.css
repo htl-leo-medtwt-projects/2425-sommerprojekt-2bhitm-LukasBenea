@@ -1,40 +1,46 @@
+/* *********** SECTION: Root *********** */
 :root {
-    --siteBackgroundcolor:#ff0000;
-    --lineBackgroundcolor:#D9D9D9;
-   
+    --siteBackgroundcolor: #ff0000;
+    --lineBackgroundcolor: #D9D9D9;
 }
-*{
+
+/* *********** SECTION: Grundeinstellungen *********** */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: normaleFont;
-
 }
+
 *::-webkit-scrollbar {
     display: none;
-  }
-body{
-    background-color: var(--siteBackgroundcolor);
-    
-
 }
-.wrapper{
-    -ms-overflow-style: none;  
+
+body {
+    background-color: var(--siteBackgroundcolor);
+}
+
+.wrapper {
+    -ms-overflow-style: none;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
     scroll-behavior: smooth;
 }
+
 @font-face {
     font-family: normaleFONT;
     src: url(../fonts/normaleFONT.ttf);
 }
+
 @font-face {
     font-family: uberschriftenFONT;
     src: url(../fonts/uberschriftenFONT.ttf);
 }
-#nav{
+
+/* *********** SECTION: Navigation *********** */
+#nav {
     margin-top: 537px;
     margin-left: 60px;
     gap: 300px;
@@ -42,47 +48,48 @@ body{
     grid-template-columns: auto auto auto;
     z-index: 1000;
 }
-h1{
- margin-top: 8px;
+
+h1 {
+    margin-top: 8px;
     font-size: 55px;
     z-index: 100;
     font-family: uberschriftenFont;
-
-    
 }
 
-h2{
-    font-family:uberschriftenFONT;
+h2 {
+    font-family: uberschriftenFONT;
     font-size: 40px;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-#fameUBERSCHRIFT{
+
+/* *********** SECTION: Überschriften *********** */
+#fameUBERSCHRIFT {
     margin-top: 10px;
     z-index: 100;
     font-size: 45px;
-
 }
-#quizUBERSCHRIFT{
+
+#quizUBERSCHRIFT {
     z-index: 100;
     margin-top: 20px;
 }
 
-
-#bannerINFINITYGAUNTLET{
+/* *********** SECTION: Banner *********** */
+#bannerINFINITYGAUNTLET {
     width: 22vw;
     height: auto;
     position: absolute;
-    left:-55px;
+    left: -55px;
     top: -83.43px;
     transform: rotate(8deg);
     z-index: -1;
-    font-family: var(--uberschriftenFONT);
-
 }
-#line1{
+
+#line1 {
     position: absolute;
     top: -10px;
     left: 390px;
@@ -93,16 +100,16 @@ a{
     z-index: 99;
 }
 
-#bannerSECRETWAR{
+#bannerSECRETWAR {
     width: 23vw;
     height: auto;
     position: absolute;
     left: 380px;
     top: -10px;
     z-index: -2;
-    
 }
-#line2{
+
+#line2 {
     position: absolute;
     top: -10px;
     left: 770px;
@@ -113,8 +120,7 @@ a{
     z-index: 99;
 }
 
-
-#bannerCIVILWAR{
+#bannerCIVILWAR {
     width: 21vw;
     height: auto;
     position: absolute;
@@ -122,10 +128,9 @@ a{
     top: -54.73px;
     transform: rotate(7deg);
     z-index: -1;
-    
 }
 
-#line3{
+#line3 {
     position: absolute;
     top: -10px;
     left: 1195px;
@@ -135,18 +140,18 @@ a{
     transform: rotate(7deg);
     z-index: 99;
 }
-#bannerHOUSEOFM{
+
+#bannerHOUSEOFM {
     width: 22vw;
     height: auto;
     position: absolute;
-    left:1165.42px;
+    left: 1165.42px;
     top: -109.05px;
     transform: rotate(-3deg);
     z-index: -2;
 }
 
-
-#line4{
+#line4 {
     position: absolute;
     top: -10px;
     left: 1610px;
@@ -157,17 +162,18 @@ a{
     z-index: 99;
 }
 
-#bannerOLDMANLOGAN{
+#bannerOLDMANLOGAN {
     width: 25.2vw;
     height: auto;
     position: absolute;
-    left:1574.42px;
+    left: 1574.42px;
     top: -166px;
     transform: rotate(10deg);
     z-index: -3;
-
 }
-#bannerRISS{
+
+/* *********** SECTION: Riss Animation *********** */
+#bannerRISS {
     z-index: 100;
     position: absolute;
     top: 360px;
@@ -175,49 +181,37 @@ a{
     transform: scale(0.95);
 }
 
-#arrow1{
-   position: absolute;
-  
+/* *********** SECTION: Scroll-Pfeile Animation *********** */
+#arrow1 {
+    position: absolute;
     top: 700px;
     left: 930px;
     z-index: 1100;
     animation: arrows infinite ease-in-out 1s 1s;
-
-
 }
-#arrow2{
+
+#arrow2 {
     position: absolute;
     top: 770px;
     left: 930px;
-    animation: arrows infinite ease-in-out 1s ;
-
+    animation: arrows infinite ease-in-out 1s;
 }
 
 @keyframes arrows {
-    0%{margin-top: 0px;}
-    50%{margin-top: 10px;}
-    10%{margin-top: 20px;}
-
-    
+    0% { margin-top: 0px; }
+    50% { margin-top: 10px; }
+    10% { margin-top: 20px; }
 }
 
-#section1{
+/* *********** SECTION: Hauptsektionen *********** */
+#section1 {
     position: relative;
-     width: 100%;
-     height: 100vh;
-     scroll-snap-align: start;
-     
-   
- }
- #section2{
-     position: relative;
-     width: 100%;
-     height: 100vh;
-     background: var(--siteBackgroundcolor);
-     scroll-snap-align: start;
-     overflow-y: scroll;
- }
- #section3{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#section2 {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -226,55 +220,81 @@ a{
     overflow-y: scroll;
 }
 
+#section3 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--siteBackgroundcolor);
+    scroll-snap-align: start;
+    overflow: visible;
+}
 
-#footer{
+/* *********** SECTION: Footer *********** */
+#footer {
     position: absolute;
     height: 17vh;
-    background-image: linear-gradient(var(--siteBackgroundcolor),black,black,black);
+    background-image: linear-gradient(var(--siteBackgroundcolor), black, black, black);
     bottom: 0px;
     z-index: 1111010;
     width: 100%;
 }
-#socials{
-position: absolute;
-left: 20px;
-bottom: 15px;
-display: grid;
-grid-template-columns: auto auto auto auto auto auto auto auto;
+
+/* *********** SECTION: Social Media *********** */
+#socials {
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
 }
-#socials p{
+
+#socials p {
     margin-top: 35px;
     color: #D9D9D9;
     font-family: normaleFont;
     font-size: 20px;
 }
-#socials img{
-   width: 90px;
+
+#socials img {
+    width: 90px;
 }
 
-#socials img:hover{
+#socials img:hover {
     transform: scale(1.1);
 }
 
-#accountBild{
+/* *********** SECTION: Account-Anzeige *********** */
+#accountBild {
     position: absolute;
     right: 16px;
     bottom: 16px;
+    z-index: 10000;
 }
+
 #accountBild img {
- width: 80px;
+    width: 80px;
     border: #D9D9D9 5px solid;
 }
 
-#comment1{
+#accountBild div {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* *********** SECTION: Kommentar-Bubbles *********** */
+#comment1 {
     position: absolute;
     top: 80px;
     left: 350px;
     transform: scaleX(-1);
-  
 }
 
-#ctext1{
+#ctext1 {
     width: 450px;
     position: absolute;
     left: 370px;
@@ -282,50 +302,53 @@ grid-template-columns: auto auto auto auto auto auto auto auto;
     font-size: 19px;
 }
 
-#comment2{
+#comment2 {
     position: absolute;
     top: 500px;
     left: 350px;
     transform: scaleX(-1);
 }
 
-#ctext2{
+#ctext2 {
     width: 450px;
     position: absolute;
     left: 370px;
     top: 540px;
     font-size: 19px;
 }
-#comment3{
+
+#comment3 {
     position: absolute;
     top: 20px;
     right: 390px;
     transform: scaleX(1);
 }
 
-
-#ctext3{
+#ctext3 {
     width: 380px;
     position: absolute;
     right: 430px;
     top: 60px;
     font-size: 19px;
 }
-#comment4{
+
+#comment4 {
     position: absolute;
     top: 440px;
     right: 350px;
     transform: scaleX(1);
 }
 
-#ctext4{
+#ctext4 {
     width: 450px;
     position: absolute;
     right: 360px;
     top: 510px;
     font-size: 19px;
 }
-#verticalLine{
+
+/* *********** SECTION: Vertikale Linie *********** */
+#verticalLine {
     width: 35px;
     height: 900px;
     background-color: var(--lineBackgroundcolor);
@@ -335,45 +358,284 @@ grid-template-columns: auto auto auto auto auto auto auto auto;
     margin-right: auto;
 }
 
-#deadpool1{
+/* *********** SECTION: Deadpool und Sprechblase *********** */
+#deadpool1 {
     position: absolute;
     width: 400px;
     right: 0px;
     top: 0px;
 }
-#blase{
+
+#blase {
     position: absolute;
     right: 330px;
     top: 30px;
     transform: scale(0.8);
 }
-#deadpool2{
+
+#deadpool2 {
     position: absolute;
     right: 200px;
     top: 160px;
     transform: scale(0.75);
 }
-#tipp{
+
+#tipp {
     position: absolute;
     right: 430px;
     top: 130px;
     font-size: 20px;
 }
 
-#comics{
-    position: absolute;
-    left: 150px;
-    top: 150px;
-    width: 750px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    row-gap: 50px;
+
+/* *********** SECTION: Comic Detail Panel *********** */
+#comicPanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
 }
 
-#comics img{
-    width: 200px;
-    border: 7px solid #D9D9D9;
+#panelContent {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
 }
-#comics img:hover{
-   transform: scale(1.05);
+
+#stars .star {
+    font-size: 30px;
+    cursor: pointer;
+    color: lightgray;
 }
+
+#stars .star:hover,
+#stars .star.active {
+    color: gold;
+}
+
+#commentBox {
+    width: 100%;
+    height: 80px;
+    margin-top: 15px;
+    resize: none;
+}
+
+#closePanel {
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
+}
+
+
+/* *********** SECTION: Comic-Box Layout *********** */
+.slider-container {
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    margin: 50px auto;
+    top: 100px;
+    left: 100px;
+    overflow: visible;
+
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide {
+    display: flex;
+    min-width: 1000px;
+    height: 600px;
+    background: #111;
+    border: 3px solid red;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 20px red;
+    padding: 20px;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none; 
+  }
+  
+  .slide.active {
+    display: flex; 
+  }
+  .comic-box {
+    background: #d40000;
+    flex: 1;
+    border: white 5px solid;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .comic-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .info-box {
+    background: #d40000;
+    flex: 1.5;
+    border: white 5px solid;
+
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .info-box h2 {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .info-text {
+    background: #111;
+    height: 258px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .info-text p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .summary {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ddd;
+  }
+  
+ /* *********** SECTION: Bewertungs-Button *********** */
+.bewerten {
+    margin-top: 20px;
+    padding: 12px;
+    background: #111;
+    color: #ff0000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .bewerten:hover {
+    background: #ff0000;
+    color: white;
+  }
+  
+  /* *********** SECTION: Dots für den Slider *********** */
+  .dots {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .dot {
+    width: 30px;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    opacity: 0.7;
+    transition: background-color 0.3s, width 0.3s, border 0.3s;
+  }
+  
+  .dot.active {
+    width: 50px;
+    background-color: red;
+    border: 2px solid white;
+    opacity: 1;
+  }
+  
+  /* *********** SECTION: Anmelde-Button *********** */
+  #accountBild div {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  
+  #accountBild div:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* *********** SECTION: Bewertungssystem *********** */
+  .bewertung-bereich {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    display: none; 
+  }
+  
+  .sterne {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sterne span {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .sterne span.aktiv {
+    color: gold;
+  }
+  
+  #commentInput {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #111;
+    color: white;
+  }
+  

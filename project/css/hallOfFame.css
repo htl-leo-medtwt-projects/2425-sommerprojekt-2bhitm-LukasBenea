@@ -1,0 +1,138 @@
+/* *********** SECTION: Grundlayout *********** */
+body {
+    background-color: #111;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.hallOfFameContainer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border: 3px solid red;
+    border-radius: 20px;
+    box-shadow: 0 0 20px red;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* *********** SECTION: Bewertungseinträge *********** */
+.bewertung {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #333, #111);
+    border: 2px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: translateX(0);
+}
+
+/* *********** SECTION: Eigene Nachrichten *********** */
+.bewertung.own {
+    align-self: flex-start;
+    background: linear-gradient(135deg, #550000, #220000);
+    margin-right: auto;
+    margin-left: 0;
+    border: 2px solid red;
+}
+
+/* *********** SECTION: Andere Nachrichten *********** */
+.bewertung.other {
+    align-self: flex-end;
+    background: linear-gradient(135deg, #003355, #001122);
+    margin-left: auto;
+    margin-right: 0;
+    border: 2px solid #00bfff;
+}
+
+/* *********** SECTION: Header*********** */
+.bewertung-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.bewertung-header img {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 3px solid white; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); 
+    background-color: black;
+}
+
+
+.bewertung-header span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* *********** SECTION: Kommentar *********** */
+.bewertung-kommentar {
+    margin-top: 10px;
+    background: #111;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+/* *********** SECTION: Sterne *********** */
+.sterne {
+    margin-top: 10px;
+}
+
+.sterne span {
+    color: gold;
+    font-size: 25px;
+    text-shadow: 0 0 5px gold;
+}
+
+/* *********** SECTION: Animation *********** */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+/* *********** SECTION: InfoBox *********** */
+.infoBox {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    color: white;
+}
+
+.colorCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.red {
+    background: linear-gradient(135deg, #ff0000, #550000);
+}
+
+.blue {
+    background: linear-gradient(135deg, #00bfff, #001122);
+}

@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hall of Fame</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../js/storage.js" defer></script>
+    <script src="../js/hallOfFame.js" defer></script>
+    <link rel="stylesheet" href="../css/hallOfFame.css">
 </head>
 <body>
+
+    <div class="hallOfFameContainer">
+        <h1>Hall of Fame</h1>
+        <div class="infoBox">
+            <div class="infoItem">
+                <div class="colorCircle red"></div>
+                <span>Du</span>
+            </div>
+            <div class="infoItem">
+                <div class="colorCircle blue"></div>
+                <span>Andere</span>
+            </div>
+        </div>
+        
+        <div id="bewertungen"></div>
+    </div>
     
 </body>
 </html>

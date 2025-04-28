@@ -1,3 +1,7 @@
+<!-- ********************************* -->
+<!-- ****** VORSEITE – HTML ********** -->
+<!-- ********************************* -->
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -11,13 +15,19 @@
 </head>
 
 <body>
+
+    <!-- ================================== -->
+    <!-- === BEREICHE für Seitenumschaltung -->
+    <!-- ================================== -->
     <div id="bereiche">
+
+        <!-- =============================== -->
+        <!-- === SECTION 1: Loginbereich === -->
+        <!-- =============================== -->
         <div id="section1">
             <div id="tippBox">
-                
                 <img src="../images/vorseite/deadpoolHello.png" id="helloImg" alt="">
                 <img id="deadBlase" src="../images/startseite/comicBlase.png" alt="">
-
                 <div id="deadTipp">
                     Hallo! Hier! Schön dich hier zu<br>
                     sehen aber das ist nur der Start, vertrau mir.<br>
@@ -30,34 +40,44 @@
                     nicht alle Funktionen wie bewerten und so weiter...
                 </div>
             </div>
-
             <div id="anmeldeBereich">
                 <h2>Anmeldung</h2>
                 <input type="email" id="loginEmail" placeholder="E-Mail"><br><br>
                 <input type="password" id="loginPassword" placeholder="Passwort"><br><br>
+
                 <div id="loginButton">Anmelden</div>
                 <div id="gastButton">Als Gast fortfahren</div>
                 <div id="loginMessage"></div>
                 <div id="regButton">REGISTRIEREN</div>
+
             </div>
         </div>
 
+        <!-- =============================== -->
+        <!-- === SECTION 2: Registrierung == -->
+        <!-- =============================== -->
         <div id="section2">
+
             <div id="regBereich">
                 <div id="deadpoolREAD">
                     <img id="deadpoolAskImg" src="../images/vorseite/deadpoolAsk.png" alt="">
                     <img id="blase" src="../images/startseite/comicBlase.png" alt="">
                     <div id="tipp">
-                        <div id="frage">Erstellen wir mal dein Account.<br>Du musst mir nur ein paar Fragen beantworten, verstanden?</div>
+                        <div id="frage">
+                            Erstellen wir mal dein Account.<br>
+                            Du musst mir nur ein paar Fragen beantworten, verstanden?
+                        </div>
                         <div id="ja">Ja</div>
                         <input type="text" id="antwortInput" style="display: none;" autofocus>
+
                     </div>
                 </div>
-
                 <div id="bilderGrid" style="display: none;"></div>
                 <div id="confirmProfile" style="display: none;">Bestätigen</div>
+
             </div>
         </div>
+
     </div>
 </body>
 
