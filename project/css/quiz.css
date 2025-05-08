@@ -1,0 +1,129 @@
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#quizContainer {
+    width: 80vw;
+    max-width: 1200px;
+    height: 60vh;
+    margin: 10vh auto;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid red;
+    box-shadow: 0 0 20px red;
+}
+
+.ergebnisPodest {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: nowrap;
+}
+
+
+h1 {
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+}
+
+#frageBereich {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#antwortBereich {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.antwortOption, .emojiOption, .bildOption {
+    background-color: #222;
+    color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.antwortOption:hover, .emojiOption:hover, .bildOption:hover {
+    background-color: red;
+    color: black;
+    transform: scale(1.05);
+}
+
+#sliderInput {
+    width: 100%;
+    max-width: 500px;
+}
+
+#weiterButton {
+    background-color: red;
+    color: white;
+    padding: 12px 24px;
+    margin: 20px auto 0;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    max-width: 300px;
+}
+
+#weiterButton:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
+
+#ergebnisBereich h2 {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.empfehlungBox {
+    background: #1a1a1a;
+    border: 2px solid #ff0000;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    width: 260px;
+    box-shadow: 0 0 12px #000;
+}
+
+.empfehlungBox img {
+    height: 240px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.empfehlungBox h3 {
+    margin: 10px 0;
+    color: #ff4c4c;
+}
+
+.empfehlungBox p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.empfehlungBox.must {
+    transform: scale(1.1);
+    border: 3px solid gold;
+    background: #2a2a2a;
+}

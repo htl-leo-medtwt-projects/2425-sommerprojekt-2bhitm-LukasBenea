@@ -39,3 +39,10 @@ function hasProfile() {
 function clearStorage() {
     localStorage.clear();
 }
+let alleComics = [
+    { name: "Deadpool Kills The Marvel Universe", tags: ["deadpool", "solo", "düster", "humorvoll", "alternate", "mature"] },
+    { name: "Spider-Verse", tags: ["spider-man", "team", "multiverse", "crossover", "episch", "teen"] },
+    // … weitere Comics mit Tag-Arrays
+];
+localStorage.setItem("alleComics", JSON.stringify(alleComics));
+

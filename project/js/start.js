@@ -3,6 +3,7 @@
 // **********************************************
 
 document.addEventListener("DOMContentLoaded", function () {
+  
     document.addEventListener("DOMContentLoaded", function () {
         console.log("==== TESTSTART ====");
     
@@ -98,68 +99,69 @@ document.addEventListener("DOMContentLoaded", function () {
   // *********** SECTION: Panel schließen
   // **********************************************
 
-  closePanel.addEventListener("click", function () {
-      comicPanel.style.display = "none";
-  });
+  if (closePanel) {
+    closePanel.addEventListener("click", function () {
+        comicPanel.style.display = "none";
+    });
+}
+
 });
 // **********************************************
 // *********** SECTION: Footer Account-Anzeige **
 // **********************************************
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
-    let footer = document.getElementById("footer");
-    if (!footer) return;
+  let footer = document.getElementById("footer");
+  if (!footer) return;
 
-    let existingAccount = document.getElementById("accountBild");
-    if (existingAccount) {
-        existingAccount.remove();
-    }
+  let existingAccount = document.getElementById("accountBild");
+  if (existingAccount) {
+      existingAccount.remove();
+  }
 
-    let accountDiv = document.createElement("div");
-    accountDiv.id = "accountBild";
+  let accountDiv = document.createElement("div");
+  accountDiv.id = "accountBild";
 
-    let userinfo = JSON.parse(localStorage.getItem("userinfo"));
+  let userinfo = JSON.parse(localStorage.getItem("userinfo"));
 
-    if (userinfo === null) {
-        let loginBtn = document.createElement("div");
-        loginBtn.textContent = "Anmelden";
-        loginBtn.style.color = "white";
-        loginBtn.style.fontWeight = "bold";
-        loginBtn.style.fontSize = "20px";
-        loginBtn.style.cursor = "pointer";
-        loginBtn.style.backgroundColor = "black";
-        loginBtn.style.border = "2px solid white";
-        loginBtn.style.padding = "10px 20px";
-        loginBtn.style.borderRadius = "5px";
-        loginBtn.style.position = "absolute";
-        loginBtn.style.right = "16px";
-        loginBtn.style.bottom = "16px";
-        loginBtn.style.zIndex = "10000";
+  if (!userinfo || userinfo.username === "none") {
+      // Gast = zeige Anmeldebutton
+      let loginBtn = document.createElement("div");
+      loginBtn.textContent = "Anmelden";
+      loginBtn.style.color = "white";
+      loginBtn.style.fontWeight = "bold";
+      loginBtn.style.fontSize = "20px";
+      loginBtn.style.cursor = "pointer";
+      loginBtn.style.backgroundColor = "black";
+      loginBtn.style.border = "2px solid white";
+      loginBtn.style.padding = "10px 20px";
+      loginBtn.style.borderRadius = "5px";
+      loginBtn.style.position = "absolute";
+      loginBtn.style.right = "16px";
+      loginBtn.style.bottom = "16px";
+      loginBtn.style.zIndex = "10000";
 
-        loginBtn.addEventListener("click", function () {
-            location.href = "../html/vorseite.html";
-        });
+      loginBtn.addEventListener("click", function () {
+          location.href = "../html/vorseite.html";
+      });
 
-        accountDiv.appendChild(loginBtn);
+      accountDiv.appendChild(loginBtn);
 
-    } else {
-        let img = document.createElement("img");
-        img.src = `../images/vorseite/profilBild/${userinfo.profilBild}`;
-        img.style.cursor = "pointer";
-        img.style.width = "80px";
-        img.style.border = "5px solid #D9D9D9";
-        img.addEventListener("click", function () {
-            location.href = "../html/account.html";
-        });
-        accountDiv.appendChild(img);
-    }
+  } else {
+      // Angemeldeter User = zeige Profilbild
+      let img = document.createElement("img");
+      img.src = `../images/vorseite/profilBild/${userinfo.profilBild}`;
+      img.style.cursor = "pointer";
+      img.style.width = "80px";
+      img.style.border = "5px solid #D9D9D9";
+      img.addEventListener("click", function () {
+          location.href = "../html/account.html";
+      });
+      accountDiv.appendChild(img);
+  }
 
-    footer.appendChild(accountDiv);
+  footer.appendChild(accountDiv);
 });
-
-
 
 
 // *********** SECTION: Comic-Slider mit Infobox ***********
@@ -244,6 +246,7 @@ if (!gelesen.includes(comicTitle)) {
     gelesen.push(comicTitle);
     localStorage.setItem("geleseneComics", JSON.stringify(gelesen));
 }
+
 // **********************************************
 // *********** SECTION: Comic als gelesen markieren
 // **********************************************
@@ -266,6 +269,7 @@ document.querySelectorAll(".slide").forEach((slide, index) => {
   bewertenButton.addEventListener("click", function() {
     let infoText = slide.querySelector(".info-text");
     let bewertungBereich = slide.querySelector(".bewertung-bereich");
+
     let commentInput = slide.querySelector("textarea");
     let comicTitle = slide.querySelector(".info-box h2").innerText;
     let slideId = slide.dataset.slideId;

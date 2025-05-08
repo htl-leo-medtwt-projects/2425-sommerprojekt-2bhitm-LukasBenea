@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #111, #1a1a1a);
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#comicContainer {
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff0000;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px #ff0000aa;
+}
+
+#comicGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.comicCard {
+    background: #1a1a1a;
+    border: 2px solid #ff0000;
+    border-radius: 16px;
+    padding: 20px;
+    min-height: 650px;
+    box-shadow: 0 0 12px #000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.comicCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #ff0000aa;
+}
+
+.comicImage {
+
+    height: 300px;
+    object-fit: contain; 
+    margin-bottom: 20px;
+    border: 1px solid #444;
+}
+
+.comicCard h2 {
+    font-size: 22px;
+    color: #ff4c4c;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.comicCard p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+.bewertenBtn {
+    background-color: #ff0000;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-top: auto;
+    box-shadow: 0 0 15px #ff0000;
+    transition: 0.2s;
+}
+
+.bewertenBtn:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
+
+.bewertungBereich {
+    margin-top: 15px;
+    background: #111;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.bewertungBereich textarea {
+    width: 90%;
+    max-width: 280px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 14px;
+}
+
+.absendenBtn {
+    background-color: #00cc66;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.absendenBtn:hover {
+    background-color: #00e67a;
+}
+
+.sterne span {
+    font-size: 24px;
+    cursor: pointer;
+    color: gray;
+}
+
+.sterne span.aktiv {
+    color: gold;
+}

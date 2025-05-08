@@ -1,0 +1,233 @@
+[
+  {
+    "typ": "choice",
+    "frage": "Wie sollte dein Held am liebsten arbeiten?",
+    "antworten": [
+      {
+        "text": "Alleine",
+        "tags": [
+          "solo"
+        ]
+      },
+      {
+        "text": "Im Team",
+        "tags": [
+          "team"
+        ]
+      },
+      {
+        "text": "Als Rebell",
+        "tags": [
+          "rebell",
+          "antiheld"
+        ]
+      }
+    ]
+  },
+  {
+    "typ": "skala",
+    "frage": "Wie düster darf dein Comic sein?",
+    "skala": {
+      "min": 1,
+      "max": 10
+    },
+    "tagVerteilung": [
+      {
+        "bis": 3,
+        "tags": [
+          "humorvoll"
+        ]
+      },
+      {
+        "bis": 7,
+        "tags": [
+          "balanced"
+        ]
+      },
+      {
+        "bis": 10,
+        "tags": [
+          "düster",
+          "mature"
+        ]
+      }
+    ]
+  },
+  {
+    "typ": "jaNein",
+    "frage": "Magst du alternative Realitäten?",
+    "jaTags": [
+      "alternate"
+    ],
+    "neinTags": []
+  },
+  {
+    "typ": "choice",
+    "frage": "Was interessiert dich am meisten an einer Geschichte?",
+    "antworten": [
+      {
+        "text": "Magie und Mysterien",
+        "tags": [
+          "magie",
+          "mystik"
+        ]
+      },
+      {
+        "text": "Technologie und Wissenschaft",
+        "tags": [
+          "tech"
+        ]
+      },
+      {
+        "text": "Gesellschaft und Realität",
+        "tags": [
+          "realistisch",
+          "gesellschaft"
+        ]
+      }
+    ]
+  },
+  {
+    "typ": "choice",
+    "frage": "Welche Rolle soll dein Held haben?",
+    "antworten": [
+      {
+        "text": "Ein moralischer Anführer",
+        "tags": [
+          "episch"
+        ]
+      },
+      {
+        "text": "Ein Antiheld mit Vergangenheit",
+        "tags": [
+          "antiheld",
+          "düster"
+        ]
+      },
+      {
+        "text": "Ein Außenseiter auf Sinnsuche",
+        "tags": [
+          "psychisch",
+          "melancholie"
+        ]
+      }
+    ]
+  },
+  {
+    "typ": "skala",
+    "frage": "Wie viel Action brauchst du?",
+    "skala": {
+      "min": 1,
+      "max": 10
+    },
+    "tagVerteilung": [
+      {
+        "bis": 3,
+        "tags": [
+          "realistisch"
+        ]
+      },
+      {
+        "bis": 7,
+        "tags": [
+          "balanced"
+        ]
+      },
+      {
+        "bis": 10,
+        "tags": [
+          "episch",
+          "crossover"
+        ]
+      }
+    ]
+  },
+  {
+    "typ": "jaNein",
+    "frage": "Interessierst du dich für weibliche Hauptfiguren?",
+    "jaTags": [
+      "girl"
+    ],
+    "neinTags": []
+  },
+  {
+    "typ": "choice",
+    "frage": "Wessen Perspektive liest du gerne?",
+    "antworten": [
+      {
+        "text": "Spider-Man & Varianten",
+        "tags": [
+          "spider-man"
+        ]
+      },
+      {
+        "text": "X-Men und Mutanten",
+        "tags": [
+          "x-men"
+        ]
+      },
+      {
+        "text": "Schurken und Antihelden",
+        "tags": [
+          "villain",
+          "antiheld"
+        ]
+      }
+    ]
+  },
+  {
+    "typ": "choice",
+    "frage": "Welcher Bereich interessiert dich am meisten?",
+    "antworten": [
+      {
+        "text": "Politik & Gesellschaft",
+        "tags": [
+          "gesellschaft",
+          "politik"
+        ]
+      },
+      {
+        "text": "Magie & Mythologie",
+        "tags": [
+          "magie",
+          "mythologie"
+        ]
+      },
+      {
+        "text": "Wissenschaft & Technik",
+        "tags": [
+          "tech"
+        ]
+      }
+    ]
+  },
+  {
+    "typ": "skala",
+    "frage": "Wie komplex darf die Handlung sein?",
+    "skala": {
+      "min": 1,
+      "max": 10
+    },
+    "tagVerteilung": [
+      {
+        "bis": 4,
+        "tags": [
+          "humorvoll"
+        ]
+      },
+      {
+        "bis": 7,
+        "tags": [
+          "balanced"
+        ]
+      },
+      {
+        "bis": 10,
+        "tags": [
+          "psychisch",
+          "mature"
+        ]
+      }
+    ]
+  }
+]

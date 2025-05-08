@@ -638,4 +638,30 @@ a {
     background: #111;
     color: white;
   }
+  /*weitere comcis*/
+  #mehrComicsButton {
+    position: absolute;
+    margin: 75vh 20vw 0;
+    text-align: center;
+}
+
+#mehrComicsButton a {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #000;
+}
+
+#mehrComicsButton a:hover {
+    background-color: #ff0000;
+    color: #000;
   
+    box-shadow: 0 0 15px #ff0000;
+    border: #000 8px solid;
+}

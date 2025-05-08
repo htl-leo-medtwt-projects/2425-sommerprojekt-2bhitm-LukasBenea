@@ -1,0 +1,434 @@
+[
+    {
+      "name": "Deadpool Kills The Marvel Universe",
+      "tags": [
+        "deadpool",
+        "solo",
+        "düster",
+        "humorvoll",
+        "alternate",
+        "mature"
+      ],
+      "beschreibung": "Deadpool dreht durch und löscht das komplette Marvel-Universum aus – mit blutigem Humor."
+    },
+    {
+      "name": "Planet Hulk",
+      "tags": [
+        "hulk",
+        "solo",
+        "weltall",
+        "big event",
+        "episch",
+        "mature"
+      ],
+      "beschreibung": "Hulk wird verbannt und wird zum Gladiator und Anführer auf einem fremden Planeten."
+    },
+    {
+      "name": "Marvel Zombies",
+      "tags": [
+        "zombies",
+        "alternate",
+        "düster",
+        "crossover",
+        "mature"
+      ],
+      "beschreibung": "Was wäre, wenn die Marvel-Helden zu blutrünstigen Zombies werden?"
+    },
+    {
+      "name": "Fantastic Four: Unthinkable",
+      "tags": [
+        "fantastic four",
+        "team",
+        "realistisch",
+        "familie",
+        "episch"
+      ],
+      "beschreibung": "Dr. Doom greift mit dunkler Magie in das Herz der Fantastic Four-Familie ein."
+    },
+    {
+      "name": "Spider-Verse",
+      "tags": [
+        "spider-man",
+        "team",
+        "multiverse",
+        "crossover",
+        "episch",
+        "teen"
+      ],
+      "beschreibung": "Spider-Menschen aus verschiedenen Dimensionen vereinen sich gegen eine kosmische Bedrohung."
+    },
+    {
+      "name": "Annihilation",
+      "tags": [
+        "cosmic",
+        "team",
+        "big event",
+        "weltall",
+        "episch",
+        "thanos"
+      ],
+      "beschreibung": "Helden des Kosmos vereinen sich gegen eine galaktische Annihilationswelle."
+    },
+    {
+      "name": "Avengers: Die Kang-Dynastie",
+      "tags": [
+        "avengers",
+        "team",
+        "zeitreise",
+        "big event",
+        "episch"
+      ],
+      "beschreibung": "Der zeitreisende Eroberer Kang bedroht die gesamte Weltzeitlinie."
+    },
+    {
+      "name": "Iron Man: Extremis",
+      "tags": [
+        "iron man",
+        "solo",
+        "tech",
+        "realistisch",
+        "mature"
+      ],
+      "beschreibung": "Ein Virus verändert die Welt und Iron Man selbst – Hightech meets Body Horror."
+    },
+    {
+      "name": "Captain America: Winter Soldier",
+      "tags": [
+        "captain america",
+        "solo",
+        "politik",
+        "freundschaft",
+        "düster"
+      ],
+      "beschreibung": "Cap entdeckt ein dunkles Geheimnis aus seiner Vergangenheit – den Winter Soldier."
+    },
+    {
+      "name": "Thor: Geschichten aus Asgard",
+      "tags": [
+        "thor",
+        "asgard",
+        "mythologie",
+        "episch",
+        "solo"
+      ],
+      "beschreibung": "Mythische Abenteuer des Donnergottes in seiner Heimat."
+    },
+    {
+      "name": "Black Panther: Wer ist der Schwarze Panther?",
+      "tags": [
+        "black panther",
+        "solo",
+        "politik",
+        "afrika",
+        "episch"
+      ],
+      "beschreibung": "T’Challa kämpft für Wakanda – zwischen Königspflicht, Technologie und Tradition."
+    },
+    {
+      "name": "Doctor Strange: Der Eid",
+      "tags": [
+        "doctor strange",
+        "solo",
+        "magie",
+        "mystik",
+        "düster"
+      ],
+      "beschreibung": "Strange ermittelt in einem magischen Mordfall und entdeckt eine medizinische Verschwörung."
+    },
+    {
+      "name": "Hawkeye: Mein Leben als Waffe",
+      "tags": [
+        "hawkeye",
+        "solo",
+        "stadt",
+        "realistisch",
+        "humorvoll"
+      ],
+      "beschreibung": "Clint Bartons Alltag abseits der Avengers – charmant, urban, minimalistisch."
+    },
+    {
+      "name": "Vision: Eine fast normale Familie",
+      "tags": [
+        "vision",
+        "android",
+        "düster",
+        "familie",
+        "mature"
+      ],
+      "beschreibung": "Vision erschafft sich eine synthetische Familie – mit dramatischen Konsequenzen."
+    },
+    {
+      "name": "Daredevil: Auferstehung",
+      "tags": [
+        "daredevil",
+        "solo",
+        "blind",
+        "düster",
+        "stadt",
+        "mature"
+      ],
+      "beschreibung": "Matt Murdock fällt tief – und erhebt sich erneut aus der Dunkelheit."
+    },
+    {
+      "name": "Jessica Jones: Alias Investigations",
+      "tags": [
+        "jessica jones",
+        "girl",
+        "solo",
+        "detektiv",
+        "mature",
+        "realistisch"
+      ],
+      "beschreibung": "Eine Ex-Heldin arbeitet als Privatdetektivin – düster, roh, intensiv."
+    },
+    {
+      "name": "Moon Knight: Vom Toten auferstanden",
+      "tags": [
+        "moon knight",
+        "solo",
+        "düster",
+        "psychisch",
+        "alternate"
+      ],
+      "beschreibung": "Zwischen Identitäten, Göttern und Wahnsinn – der Mondritter kehrt zurück."
+    },
+    {
+      "name": "Sentry",
+      "tags": [
+        "sentry",
+        "psychisch",
+        "vergessen",
+        "episch",
+        "mature"
+      ],
+      "beschreibung": "Ein vergessener Held mit göttlicher Macht und dunklem Geheimnis."
+    },
+    {
+      "name": "Silver Surfer: Requiem",
+      "tags": [
+        "silver surfer",
+        "solo",
+        "weltall",
+        "melancholie",
+        "episch"
+      ],
+      "beschreibung": "Die letzten Tage des intergalaktischen Wanderers – poetisch und still."
+    },
+    {
+      "name": "Guardians of the Galaxy: Kosmisches Abenteuer",
+      "tags": [
+        "guardians",
+        "team",
+        "weltall",
+        "humorvoll",
+        "episch"
+      ],
+      "beschreibung": "Ein buntes Team schützt das Universum vor galaktischen Bedrohungen."
+    },
+    {
+      "name": "Green Goblin: Schurken der Marvel-Welt",
+      "tags": [
+        "green goblin",
+        "villain",
+        "spider-man",
+        "klassiker"
+      ],
+      "beschreibung": "Ein düsteres Porträt eines der gefährlichsten Gegenspieler von Spider-Man."
+    },
+    {
+      "name": "Miles Morales: Der ultimative Spider-Man",
+      "tags": [
+        "spider-man",
+        "solo",
+        "teen",
+        "origin",
+        "alternate"
+      ],
+      "beschreibung": "Ein junger Held tritt in die Fußstapfen von Peter Parker – mit eigenem Stil."
+    },
+    {
+      "name": "Spider-Man Noir",
+      "tags": [
+        "spider-man",
+        "alternate",
+        "düster",
+        "noir",
+        "solo"
+      ],
+      "beschreibung": "Spider-Man im Stil der 1930er – düster, filmisch, großartig gezeichnet."
+    },
+    {
+      "name": "Spider-Man: Kravens letzte Jagd",
+      "tags": [
+        "spider-man",
+        "solo",
+        "düster",
+        "klassiker",
+        "mature"
+      ],
+      "beschreibung": "Ein psychologischer Thriller über Jagd, Tod und Identität."
+    },
+    {
+      "name": "X-Men: The Last Stand",
+      "tags": [
+        "x-men",
+        "team",
+        "mutation",
+        "gesellschaft",
+        "episch"
+      ],
+      "beschreibung": "Das Finale eines Konflikts zwischen Menschen und Mutanten."
+    },
+    {
+      "name": "Ultimate X-Men 2024 #1",
+      "tags": [
+        "x-men",
+        "alternate",
+        "teen",
+        "team",
+        "neustart"
+      ],
+      "beschreibung": "Der Neustart der X-Men in einem neuen Marvel-Universum."
+    },
+    {
+      "name": "Infinity Gauntlet",
+      "tags": [
+        "thanos",
+        "crossover",
+        "episch",
+        "big event",
+        "weltall"
+      ],
+      "beschreibung": "Thanos besitzt alle Infinity-Steine – das Schicksal des Universums steht auf dem Spiel."
+    },
+    {
+      "name": "Punisher: Willkommen zurück, Frank",
+      "tags": [
+        "punisher",
+        "antiheld",
+        "gewalt",
+        "solo",
+        "düster",
+        "mature"
+      ],
+      "beschreibung": "Frank Castle kehrt zurück und bringt brutale Gerechtigkeit in die Straßen."
+    },
+    {
+      "name": "Ghost Rider: Straße zur Verdammnis",
+      "tags": [
+        "ghost rider",
+        "hölle",
+        "mystik",
+        "solo",
+        "düster"
+      ],
+      "beschreibung": "Johnny Blaze kämpft gegen Dämonen und seine eigene Vergangenheit."
+    },
+    {
+      "name": "Nova: Ursprung",
+      "tags": [
+        "nova",
+        "solo",
+        "weltall",
+        "origin",
+        "episch"
+      ],
+      "beschreibung": "Vom Schüler zum kosmischen Helden – Novas Aufstieg beginnt."
+    },
+    {
+      "name": "Warlock: Der erste Teil",
+      "tags": [
+        "warlock",
+        "cosmic",
+        "episch",
+        "alternate",
+        "philosophisch"
+      ],
+      "beschreibung": "Adam Warlocks Ursprung und sein innerer Kampf mit der Realität."
+    },
+    {
+      "name": "Thanos: Thanos kehrt zurück",
+      "tags": [
+        "thanos",
+        "villain",
+        "solo",
+        "weltall",
+        "episch"
+      ],
+      "beschreibung": "Der verrückte Titan plant erneut das Ende aller Dinge."
+    },
+    {
+      "name": "Guardians of the Galaxy Volume 3",
+      "tags": [
+        "guardians",
+        "team",
+        "weltall",
+        "humorvoll",
+        "abschied"
+      ],
+      "beschreibung": "Die letzte gemeinsame Mission der legendären Guardians."
+    },
+    {
+      "name": "Avengers Assemble",
+      "tags": [
+        "avengers",
+        "team",
+        "episch",
+        "klassiker"
+      ],
+      "beschreibung": "Die Helden vereinen sich zum ersten Mal gegen eine globale Bedrohung."
+    },
+    {
+      "name": "Avengers: Age of Ultron",
+      "tags": [
+        "avengers",
+        "team",
+        "ultron",
+        "tech",
+        "crossover"
+      ],
+      "beschreibung": "Ultron bedroht die Menschheit mit Technologie – die Avengers kämpfen ums Überleben."
+    },
+    {
+      "name": "Avengers: Rage of Ultron",
+      "tags": [
+        "avengers",
+        "team",
+        "ultron",
+        "crossover",
+        "episch"
+      ],
+      "beschreibung": "Die Vergangenheit holt die Avengers ein – Ultron will endgültige Kontrolle."
+    },
+    {
+      "name": "Vision: Eine fast normale Familie",
+      "tags": [
+        "vision",
+        "android",
+        "familie",
+        "mature",
+        "düster"
+      ],
+      "beschreibung": "Kann ein Android ein normales Leben führen? Vision versucht es – mit tragischen Folgen."
+    },
+    {
+      "name": "Solo",
+      "tags": [
+        "solo",
+        "militär",
+        "gewalt",
+        "realistisch"
+      ],
+      "beschreibung": "Ein tödlicher Söldner kämpft gegen den Terror – allein gegen alle."
+    },
+    {
+      "name": "Marvel Comics #1000",
+      "tags": [
+        "marvel",
+        "anthologie",
+        "klassiker",
+        "historisch"
+      ],
+      "beschreibung": "Ein Jubiläumsband mit Storys aus allen Epochen des Marvel-Universums."
+    }
+  ]

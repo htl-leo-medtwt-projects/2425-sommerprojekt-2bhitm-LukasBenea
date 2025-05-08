@@ -14,7 +14,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-  background: black;
+  background: red;
   width: 200px;
   display: flex;
   flex-direction: column;

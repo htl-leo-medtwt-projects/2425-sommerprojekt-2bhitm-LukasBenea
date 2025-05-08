@@ -254,9 +254,15 @@ function showRissOverlay() {
 
 let gastButton = document.getElementById("gastButton");
 gastButton.addEventListener("click", function () {
-    localStorage.removeItem("userinfo"); 
+    let dummyUser = {
+        username: "none",
+        vorname: "Gast",
+        profilBild: "p_1.png"
+    };
+    localStorage.setItem("userinfo", JSON.stringify(dummyUser));
     window.location.href = "../html/index.html";
 });
+
 
 
 
