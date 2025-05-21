@@ -88,24 +88,13 @@ body {
   font-size: 22px;
 }
 
-.levelBar {
-  background: #222;
-  height: 30px;
-  border: 2px solid white;
-  border-radius: 10px;
-  overflow: hidden;
-}
 
-.levelFill {
-  background: red;
-  height: 100%;
-  width: 0;
-}
 
 /* Comic Galerie */
 .comicGallery {
   display: flex;
   gap: 20px;
+ 
 }
 
 .comicItem {
