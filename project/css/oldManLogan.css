@@ -1,0 +1,254 @@
+/* *********** Abschnitt: Allgemein *********** */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a0f;
+  color: #e2e2c0;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.wrapper > div {
+  scroll-snap-align: start;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 40px;
+}
+/* *********** Abschnitt: Scrollbar entfernen *********** */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: nFont;
+  src: url(../fonts/normaleFONT.ttf);
+}
+@font-face {
+  font-family: uFont;
+  src: url(../fonts/uberschriftenFONT.ttf);
+}
+p{font-family: nFont;}
+h1{font-family: uFont;}
+h2{font-family: uFont;}
+
+
+/* *********** Abschnitt: Banner *********** */
+#section1 {
+  background-image: url('../images/oldManLogan/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+#section1 h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+#section1 .zitat {
+  margin-top: 20px;
+  font-size: 24px;
+  font-style: italic;
+}
+
+/* *********** Abschnitt: Story *********** */
+#section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  background-color: #202010;
+}
+
+#faktenBox,
+#storyBox {
+  background-color: #2a2a1a;
+  border: 2px solid gray;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+  padding: 20px;
+  width: 40vw;
+  height: 50vh;
+  overflow: auto;
+}
+
+#faktenBox h2,
+#storyBox h2 {
+  color: #99cc66;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#faktenBox p {
+  font-size: 24px;
+}
+
+#storyBox p {
+  font-size: 20px;
+}
+
+/* *********** Abschnitt: Karussell *********** */
+#section3 {
+  background-color: #18180f;
+}
+
+#karussellBox {
+  display: flex;
+  gap: 30px;
+  width: 80vw;
+  height: 87vh;
+  margin: auto;
+  padding: 20px;
+  background-color: #2a2a1a;
+  border: 9px solid gray;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  box-sizing: border-box;
+  position: relative;
+}
+
+#karussellLinks {
+  display: flex;
+  gap: 10px;
+}
+#bildGross img {
+  height: 76vh;
+  width: auto;
+  border: 6px solid #444;
+}
+
+#thumbnails img {
+  height: 37vh;
+  width: auto;
+  object-fit: cover;
+  border: 6px solid #666;
+}
+
+#thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+#karussellRechts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#karussellRechts h3 {
+  font-size: 50px;
+  color: #99cc66;
+  margin-bottom: 12px;
+}
+
+#karussellRechts p {
+  font-size: 22px;
+  line-height: 1.3em;
+  overflow-y: auto;
+}
+
+#steuerung {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 60px;
+  font-size: 32px;
+  color: #99cc66;
+  cursor: pointer;
+}
+
+#steuerung div:hover {
+  color: white;
+}
+
+/* *********** Abschnitt: Bewertung *********** */
+#section4 {
+  background-color: #18180f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bewertungsBox {
+  width: 80vw;
+  max-width: 600px;
+  height: 60vh;
+  background-color: #2a2a1a;
+  border: 2px solid gray;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#bewertungsBox h2 {
+  font-size: 28px;
+  color: #99cc66;
+  margin-bottom: 20px;
+}
+
+#sterne {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#sterne span {
+  color: gray;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#sterne span:hover {
+  transform: scale(1.3);
+  color: gold;
+}
+
+#sterne span.aktiv {
+  color: gold;
+}
+
+#kommentar {
+  width: 100%;
+  height: 150px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: none;
+  resize: none;
+  box-sizing: border-box;
+}
+
+#bewertungSpeichern {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#bewertungSpeichern:hover {
+  background-color: darkred;
+}

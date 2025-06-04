@@ -6,13 +6,42 @@ body {
   color: white;
 }
 
+
 /* Dashboard */
+.body {
+  margin: 0;
+  background: #111;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+@font-face {
+  font-family: nFont;
+  src: url(../fonts/normaleFONT.ttf);
+}
+
+@font-face {
+  font-family: uFont;
+  src: url(../fonts/uberschriftenFONT.ttf);
+}
+
+p {
+  font-family: nFont;
+}
+
+h1 {
+  font-family: uFont;
+}
+
+h2 {
+  font-family: uFont;
+}
+
 .dashboard {
   display: flex;
   height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
   background: red;
   width: 200px;
@@ -38,20 +67,17 @@ body {
   background: red;
 }
 
-/* Main Content */
 .mainContent {
   flex: 1;
   padding: 30px;
 }
 
-/* Account Bereich */
 .accountView {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
-/* Top Bereich*/
 .topSection {
   display: flex;
   align-items: center;
@@ -88,23 +114,37 @@ body {
   font-size: 22px;
 }
 
-
-
-/* Comic Galerie */
-.comicGallery {
-  display: flex;
-  gap: 20px;
- 
+input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: #222;
+  color: white;
+  outline: none;
+  margin-bottom: 10px;
 }
 
-.comicItem {
-  flex: 1;
-  background: #222;
-  height: 200px;
-  border: 2px solid white;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
+input:focus {
+  border-color: red;
+}
+
+#saveButton {
+  padding: 14px;
+  background: red;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 25px;
+  transition: background 0.3s;
+}
+
+#saveButton:hover {
+  background: darkred;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }

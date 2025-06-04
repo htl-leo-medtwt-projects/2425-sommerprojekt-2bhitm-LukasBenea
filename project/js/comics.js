@@ -124,7 +124,7 @@ function saveReview(comicTitle, stars, comment) {
 
     let neueBewertung = {
         username: userInfo.username || userInfo.vorname,
-        profilbild: profile ? profile.bild : "../images/default.png",
+        profilbild: "../images/vorseite/profilBild/" + userInfo.profilBild,
         comic: comicTitle,
         sterne: stars,
         kommentar: comment

@@ -25,7 +25,17 @@ body {
     margin-top: 30px;
     flex-wrap: nowrap;
 }
-
+@font-face {
+  font-family: nFont;
+  src: url(../fonts/normaleFONT.ttf);
+}
+@font-face {
+  font-family: uFont;
+  src: url(../fonts/uberschriftenFONT.ttf);
+}
+p{font-family: nFont;}
+h1{font-family: uFont;}
+h2{font-family: uFont;}
 
 h1 {
     text-align: center;

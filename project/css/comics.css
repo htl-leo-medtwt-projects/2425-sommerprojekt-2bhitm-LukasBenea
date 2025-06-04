@@ -5,6 +5,17 @@ body {
     font-family: 'Arial', sans-serif;
     color: white;
 }
+@font-face {
+  font-family: nFont;
+  src: url(../fonts/normaleFONT.ttf);
+}
+@font-face {
+  font-family: uFont;
+  src: url(../fonts/uberschriftenFONT.ttf);
+}
+p{font-family: nFont;}
+h1{font-family: uFont;}
+h2{font-family: uFont;}
 
 #comicContainer {
     max-width: 1500px;

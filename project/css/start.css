@@ -86,7 +86,7 @@ a {
     left: -55px;
     top: -83.43px;
     transform: rotate(8deg);
-    z-index: -1;
+    z-index: 3;
 }
 
 #line1 {
@@ -106,7 +106,7 @@ a {
     position: absolute;
     left: 380px;
     top: -10px;
-    z-index: -2;
+    z-index: 1;
 }
 
 #line2 {
@@ -127,7 +127,7 @@ a {
     left: 781px;
     top: -54.73px;
     transform: rotate(7deg);
-    z-index: -1;
+    z-index: 2;
 }
 
 #line3 {
@@ -148,7 +148,7 @@ a {
     left: 1165.42px;
     top: -109.05px;
     transform: rotate(-3deg);
-    z-index: -2;
+    z-index: 1;
 }
 
 #line4 {
@@ -169,7 +169,7 @@ a {
     left: 1574.42px;
     top: -166px;
     transform: rotate(10deg);
-    z-index: -3;
+    z-index: 0;
 }
 
 /* *********** SECTION: Riss Animation *********** */
@@ -665,3 +665,4 @@ a {
     box-shadow: 0 0 15px #ff0000;
     border: #000 8px solid;
 }
+

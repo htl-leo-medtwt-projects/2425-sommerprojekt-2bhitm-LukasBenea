@@ -1,54 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/civilWar.js"></script>
-    <link rel="stylesheet" href="../css/civilWar.css">
-
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civil War</title>
+  <link rel="stylesheet" href="../css/civilWar.css">
+  <script src="../js/storage.js" defer></script>
+  <script src="../js/civilWar.js" defer></script>
 </head>
 <body>
-    
-   
-    <div class="wrapper">
 
-    <div id="section1">
-        <img id="ironmanBanner" src="../images/civilWar/ironmanBanner.jpg" alt="">
-        
-        <div id="nav">
-            <h1>CIVIL WAR</h1>
-        </div>
+<div id="wrapper">
 
-        <a id="homeLINK" href="../html/index.html">Home</a>
-        <a id="fameLINK" href="../html/hallOfFame.html">Hall of Fame</a>
-        <a id="quizLINK" href="../html/quiz.html">Quiz</a>
-
-        <a id="accountLINK" href="../html/account.html">Account</a>
-        <a id="accountBILDLink" href="../html/account.html"><img id="accountBild" src="../images/civilWar/accountBild.png" alt=""></a>
-
-        <img id="captainBanner" src="../images/civilWar/captainBanner.jpg" alt="">
-
+  <div id="section1">
+    <img id="ironmanBanner" src="../images/civilWar/ironmanBanner.jpg" alt="">
+    <div id="nav">
+      <h1>CIVIL WAR</h1>
     </div>
-    <div id="section2">
+    <a id="homeLINK" href="../html/index.html">Home</a>
+    <a id="fameLINK" href="../html/hallOfFame.html">Hall of Fame</a>
+    <a id="quizLINK" href="../html/quiz.html">Quiz</a>
+    <a id="accountLINK" href="../html/account.html">Account</a>
+    <a id="accountBILDLink" href="../html/account.html"><img id="accountBild" src="../images/civilWar/accountBild.png" alt=""></a>
+    <img id="captainBanner" src="../images/civilWar/captainBanner.jpg" alt="">
+  </div>
 
-        <div id="sidesBILDContainer">
-            <img id="sidesBild" src="../images/civilWar/sides.png" alt="">
-        </div>
-        <div id="sidesText">
-            <div id="captainBUTTON">Captain America</div>
-            <div>
-                <p>Pick a Side</p>
-                <p>But choose wisely!</p>
-            </div>
-            <div id="ironBUTTON">Iron Man</div>
-        </div>
-        
+  <div id="section2">
+    <div id="infoBox">
+      <h2>Hintergrund</h2>
+      <p>Der Civil War ist eines der bedeutendsten Events im Marvel-Universum. Die Helden sind gespalten: Auf der einen Seite Iron Man, der für Registrierung eintritt – auf der anderen Seite Captain America, der für die Freiheit der Helden kämpft.</p>
+      <p><strong>Autor:</strong> Mark Millar<br>
+         <strong>Zeichner:</strong> Steve McNiven<br>
+         <strong>Veröffentlichung:</strong> 2006–2007<br>
+         <strong>Ausgaben:</strong> 7 Hefte + zahlreiche Tie-Ins</p>
     </div>
+  </div>
+
+  <div id="section3">
+    <div id="sidesBILDContainer">
+      <img id="sidesBild" src="../images/civilWar/sides.png" alt="">
+    </div>
+    <div id="sidesText">
+      <div id="captainBox">
+        <div id="captainBUTTON">Captain America</div>
+      </div>
+      <div id="middleText">
+        <p>Pick a Side</p>
+        <p>But choose wisely!</p>
+      </div>
+      <div id="ironBox">
+        <div id="ironBUTTON">Iron Man</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="section4">
+    <div id="chosenTeamBox">
+      <h2 id="ausgabeTeam">Deine Wahl:</h2>
+      <img id="teamBild" src="" alt="">
+    </div>
+  </div>
+
+  <div id="section5">
+    <h2>Bewertung</h2>
+    <div id="sterneContainer"></div>
+    <textarea id="kommentarFeld" placeholder="Was denkst du über Civil War?"></textarea>
+    <div id="sendenButton">Bewertung abschicken</div>
+  </div>
 
 </div>
 
-
-   
 </body>
 </html>
